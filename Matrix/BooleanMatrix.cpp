@@ -25,7 +25,7 @@ void BooleanMatrix(vector<vector<int>>&arr){
 int main(){
     int row,column;
     cin>>row>>column;
-    vector<vector<int>>arr;
+    vector<vector<int>>arr(row,vector<int>(column));
     for(int i=0;i<row;i++){
         for(int j=0;j<column;j++){
             cin>>arr[i][j];
@@ -36,6 +36,7 @@ int main(){
         for(int j=0;j<column;j++){
             cout<<arr[i][j]<<" ";
         }
+        cout<<"\n";
     }
     return 0;
 }
